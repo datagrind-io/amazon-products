@@ -1,0 +1,18 @@
+id: datagrind-io/amazon-products
+name: Amazon Products Scraper
+description: A web scraper that extracts product information from Amazon, including product name, price, rating, and more.
+author: imclint21
+version: 0.1.0
+requirements:
+    - bs4
+    - selenium
+parameters:
+    - name: search_query
+      description: The search term to find products on Amazon
+      required: true
+      type: string
+    - name: num_products
+      description: The number of products to scrape
+      required: false
+      type: integer
+      default: 10
